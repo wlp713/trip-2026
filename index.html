@@ -104,6 +104,13 @@
   .why .lb{font-size:9.5px;letter-spacing:.2em;color:var(--accent);font-weight:800;display:block;margin-bottom:6px}
   .why p{margin:0;font-size:12.8px;line-height:1.68;color:#4a3d34}
 
+  /* ---------- photo break ---------- */
+  .brk{position:relative;height:44vh;min-height:280px;margin:30px 0 0;overflow:hidden;background:#111}
+  .brk img{width:100%;height:100%;object-fit:cover}
+  .brk:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),transparent 55%)}
+  .brk figcaption{position:absolute;left:20px;right:20px;bottom:16px;z-index:2;color:#fff;font-size:11px;
+    letter-spacing:.12em;opacity:.85}
+
   /* ---------- notes ---------- */
   .notes{display:grid;gap:14px;margin-top:4px}
   .note{background:var(--card);border-radius:16px;padding:16px 16px 15px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
@@ -206,7 +213,20 @@
         <div class="ph"><img loading="lazy" decoding="async" src="img/vn-g6.webp" alt="美溪海滩"><span class="idx">06</span></div>
         <div class="tx"><h3>美溪海滩</h3><p>清晨五点半，本地人在这里游泳、打太极、卖法棍。这是岘港最真实的一小时。</p></div>
       </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/vn_hue2.webp" alt="顺化皇城庭院"><span class="idx">07</span></div>
+        <div class="tx"><h3>顺化皇城</h3><p>越南最后一个王朝的紫禁城，战后只剩残垣，但那种"废墟里长出苔藓"的衰败感，比完整的皇宫更动人。</p></div>
+      </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/vn_g8.webp" alt="会安古厝"><span class="idx">08</span></div>
+        <div class="tx"><h3>会安古厝</h3><p>进记古宅这类老屋还住着原主人的后代。推开门的那一瞬，像走进一张一百年前的照片。</p></div>
+      </article>
     </div>
+
+    <figure class="brk reveal">
+      <img loading="lazy" decoding="async" src="img/vn_pb.webp" alt="会安河上夜色">
+      <figcaption>会安 · 农历十四的夜里，全城只点灯笼</figcaption>
+    </figure>
 
     <section class="b"><div class="eyebrow"><span>逐日行程</span><hr></div></section>
     <div class="days">
@@ -390,7 +410,20 @@
         <div class="ph"><img loading="lazy" decoding="async" src="img/sl-g6.webp" alt="加勒古堡"><span class="idx">06</span></div>
         <div class="tx"><h3>加勒古堡</h3><p>荷兰人修的城墙直接立在印度洋礁石上，日落时整段墙都是灯。古城里住一晚，比什么都值。</p></div>
       </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/sl_g7.webp" alt="高山铁路"><span class="idx">07</span></div>
+        <div class="tx"><h3>高山铁路</h3><p>殖民时期修的窄轨铁路，蓝色车厢穿过茶园和桥。这段路本身就是景点，火车票比门票值。</p></div>
+      </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/sl_g8.webp" alt="康提佛牙寺"><span class="idx">08</span></div>
+        <div class="tx"><h3>康提湖与佛牙寺</h3><p>白墙、护城河、一整圈棕榈。傍晚鼓乐响起的时候，整个湖面都在震。</p></div>
+      </article>
     </div>
+
+    <figure class="brk reveal">
+      <img loading="lazy" decoding="async" src="img/sl_pb.webp" alt="斯里兰卡大象">
+      <figcaption>米内日亚 · 旱季的象群会全部聚到水库边</figcaption>
+    </figure>
 
     <section class="b"><div class="eyebrow"><span>逐日行程</span><hr></div></section>
     <div class="days">
@@ -586,7 +619,24 @@
         <div class="ph"><img loading="lazy" decoding="async" src="img/eg-g7.webp" alt="哈利利市场"><span class="idx">07</span></div>
         <div class="tx"><h3>哈利利市场</h3><p>十四世纪的市集，现在还在卖铜灯。走累了就钻进百年老咖啡店喝一杯薄荷茶。</p></div>
       </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/eg_g8.webp" alt="尼罗河三角帆船"><span class="idx">08</span></div>
+        <div class="tx"><h3>尼罗河帆船</h3><p>三角帆船（felucca）是尼罗河上最老的交通工具，现在还在用。傍晚上去漂一小时，什么都不用想。</p></div>
+      </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/eg_g9.webp" alt="卢克索热气球"><span class="idx">09</span></div>
+        <div class="tx"><h3>卢克索热气球</h3><p>全世界最便宜的热气球之一。清晨从帝王谷上空飞过，尼罗河在左边，沙漠在右边。</p></div>
+      </article>
+      <article class="gcard reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="img/eg_g10.webp" alt="努比亚村"><span class="idx">10</span></div>
+        <div class="tx"><h3>努比亚村</h3><p>彩色的房子，蓝色的门，房子上画着鳄鱼。这是阿斯旺最不像埃及的地方。</p></div>
+      </article>
     </div>
+
+    <figure class="brk reveal">
+      <img loading="lazy" decoding="async" src="img/eg_pb.webp" alt="尼罗河日落">
+      <figcaption>阿斯旺 · 尼罗河从撒哈拉中间流过去</figcaption>
+    </figure>
 
     <section class="b"><div class="eyebrow"><span>逐日行程</span><hr></div></section>
     <div class="days">
